@@ -1,0 +1,425 @@
+/*AUTOR: ANDRÉS FELIPE RINCÓN MARTINEZ*/
+
+/*VARIABLES*/
+:root {
+    --fondo: #f7c6006e;
+    --letra: rgb(13, 12, 12);
+    --enlacesArticulos: #C20E2C;
+    --amarilloBandera: #F7C700;
+    --azulBandera: #002e8393;
+    --rojoBandera: #c20e2ce7;
+
+
+}
+
+/*VARIABLES*/
+
+/*GENERICO*/
+html,
+body {
+    background-color: var(--fondo);
+    margin: 0;
+    color: var(--letra);
+    border: 1px solid black;
+
+}
+
+img {
+    width: 100%;
+}
+
+/*GENERICO*/
+
+
+/*MENÚS DE NAVEGACIÓN*/
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anchomax {
+    width: 96%;
+    max-width: 1244px;
+    margin: 0 auto;
+}
+
+#burger {
+    display: none;
+}
+
+header nav ul,
+footer nav ul {
+    display: flex;
+    column-gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a,
+header nav a:link,
+footer nav ul a,
+footer nav ul a:link {
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--letra);
+    padding: 0.5rem 1rem;
+    transition: all ease 0.5s;
+}
+
+
+header nav a:hover {
+    background-color: brown;
+    color: bisque;
+    transform: scale(1.2);
+
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav ul a,
+footer nav ul a:link {
+    text-transform: none;
+    transition: all ease 0.8s;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*ICONOS FOOTER*/
+.iconos {
+    color: transparent;
+    position: relative;
+    transition: all ease 0.8s;
+}
+
+.enlaces {
+    transition: all ease 0.8s;
+    display: block;
+}
+
+.enlaces:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+.enlaces:hover .iconos {
+    color: rgb(5, 1, 36);
+}
+
+.enlaces:hover .iconos {
+    color: rgb(5, 1, 36);
+}
+
+/*ICONOS FOOTER*/
+
+
+
+/*MENÚS DE NAVEGACIÓN*/
+
+/*PÁGINA DE INICIO*/
+
+#main-inicio h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#hero-col {
+    height: 100vh;
+    margin-top: 2rem;
+    background-image: url(../img/hero-colombia.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-color: rgba(0, 0, 0, 0.161);
+    box-sizing: border-box;
+}
+
+#main-inicio section>div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+#main-inicio section article {
+    width: 49%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    padding: 0 0 1rem 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--azulBandera);
+    transition: all ease 0.8s;
+}
+
+#main-inicio section article:hover {
+    transform: translateY(-2px);
+    color: white;
+}
+
+#main-inicio article a,
+#main-inicio article a:link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--letra);
+    font-weight: 600;
+    transition: all ease 0.5s;
+}
+
+#main-inicio article a:hover {
+    color: var(--enlacesArticulos);
+    font-weight: 700;
+    font-size: 1.1rem;
+    /*REVISAR Y MEJORAR*/
+}
+
+#main-inicio article h2,
+#main-inicio article p {
+    padding: 0.5rem 1rem;
+}
+
+#main-inicio section article:nth-child(4) h2 {
+    font-size: 1.4rem;
+}
+
+
+/*PÁGINA DE INICIO*/
+
+
+/*PÁGINA DE CONTACTO*/
+#main-contacto {
+    padding: 5rem;
+}
+
+#main-contacto form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(165, 42, 42, 0.524);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+#main-contacto form div {
+    display: flex;
+    column-gap: 1rem;
+
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+fieldset>div input {
+    margin: 0;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+input {
+    padding: 0.5rem;
+    margin: 0.25rem 0.25rem 1rem 0.25rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type=submit],
+input[type=checkbox],
+input[type=radio] {
+    width: auto;
+}
+
+form label {
+    font-size: 1.2rem;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+}
+
+/*PÁGINA DE CONTACTO*/
+
+
+
+/*PÁGINA DE SERVICIOS*/
+
+iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+#main-servicios .imagenes {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+#main-servicios .imagenes img {
+    filter: blur(5px);
+    transition: all ease 0.8s;
+    margin-bottom: 5rem;
+    border-radius: 150px;
+}
+
+#main-servicios .imagenes img:hover {
+    filter: blur(0);
+    border-radius: 5px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+
+}
+
+#main-servicios .imagenes h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+#main-servicios .imagenes h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/*PÁGINA DE SERVICIOS*/
+
+
+/*VERSIÓN MOVIL*/
+
+@media screen and (max-width: 800px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--rojoBandera);
+        z-index: 11;
+    }
+
+    header nav a,
+    header nav a:link {
+        font-size: 3rem;
+        color: var(--azulBandera);
+    }
+
+    header nav a:hover {
+        background-color: transparent;
+    }
+
+    .menu {
+        border: 4px solid black;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 111;
+        position: relative;
+        transition: all ease 0.8s;
+    }
+
+    .menu span {
+        width: 92%;
+        height: 0.275rem;
+        background-color: black;
+        transition: all ease 0.8s;
+    }
+
+    header nav #burger:checked~ul {
+        display: flex;
+    }
+
+    #burger:checked+.menu span:nth-child(2) {
+        display: none;
+    }
+
+    #burger:checked+.menu span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+        background-color: white;
+    }
+
+    #burger:checked+.menu span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: white;
+
+    }
+
+    #burger:checked+.menu {
+        border-color: white;
+    }
+
+    #burger:checked+.menu:hover {
+        transform: rotate(180deg);
+    }
+
+
+
+    /*INICIO*/
+
+    #hero-col {
+        height: 48vh;
+        margin-top: 1rem;
+    }
+
+    #main-inicio h1 {
+        font-size: 3rem;
+    }
+
+    #main-inicio section article {
+        width: 92%;
+        margin: 2rem auto;
+    }
+
+    footer>div {
+        padding: 2rem 0;
+    }
+
+    img#logo {
+        width: 50%;
+    }
+
+    /*INICIO*/
+
+    /*CONTACTO*/
+
+    #main-contacto form {
+        width: 88%;
+    }
+
+    /*CONTACTO*/
+
+}

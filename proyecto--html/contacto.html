@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="anchomax">
+            <a href="index.html" title="Ir a la página de inicio"><img id="logo" src="img/logo-visita-col.webp"
+                    alt="Logotipo de movishop"></a>
+            <nav>
+                <input type="checkbox" id="burger">
+                <label for="burger" class="menu">
+                    <span></span><span></span><span></span>
+                </label>
+
+                <ul>
+                    <li><a href="index.html" title="Ir a la página de inicio">inicio</a></li>
+                    <li><a href="servicios.html" title="Ir a la página de servicios">servicios</a></li>
+                    <li><a href="contacto.html" title="Ir a la página de contacto">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-contacto">
+        <section>
+            <div class="anchomax">
+                <form action="" method="post">
+
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" value="">
+
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" value="">
+
+                        <p> ¿Con cuál género te identificas?</p>
+
+                        <div>
+
+                            <label for="hombre" id="genero">Hombre <input type="radio" id="hombre" name="genero"
+                                    value="hombre">
+                            </label>
+
+                            <label for="mujer" id="genero">Mujer <input type="radio" id="mujer" name="genero"
+                                    value="mujer">
+                            </label>
+
+                            <label for="noDecir" id="genero">Prefiero no decir <input type="radio" id="noDecir"
+                                    name="genero" value="noDecir">
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" value="">
+
+                        <label for="tel">Teléfono</label>
+                        <input type="tel" id="tel" name="tel" value="">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Motivo de consulta</legend>
+
+                        <p>¿Qué ciudad te gustaría recibir información?</p>
+                        <div>
+                            <label for="cali">Cali<input type="checkbox" name="cali" id="cali"></label>
+                            <label for="medellin">Medellin<input type="checkbox" name="medellin" id="medellin"></label>
+                            <label for="armenia">Armenia<input type="checkbox" name="armenia" id="armenia"></label>
+                            <label for="bogota">Bogotá<input type="checkbox" name="bogota" id="bogota"></label>
+                        </div>
+
+                    </fieldset>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="anchomax">
+            <nav>
+                <ul>
+                    <li>
+                        <h2>Nuestras redes</h2>
+                    </li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce nuestro Instagram">Instagram<i
+                                class="fa-brands fa-square-instagram iconos"></i></a></li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce nuestro Facebook">Facebook<i
+                                class="fa-brands fa-facebook iconos"></i></a></li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce nuestro X">X<i
+                                class="fa-brands fa-twitter iconos"></i></a></li>
+
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>
+                        <h2>Avisos legales</h2>
+                    </li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce nuestra política de privacidad">Política
+                            de privacidad<i class="fa-solid fa-shield-halved iconos"></i></a></li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce nuestra política de cookies">Política de
+                            cookies<i class="fa-solid fa-cookie-bite iconos"></i></a></li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce nuestro aviso legal">Aviso legal<i
+                                class="fa-solid fa-gavel iconos   "></i></a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li>
+                        <h2>Nosotros</h2>
+                    </li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce quiénes somos">Quiénes somos<i
+                                class="fa-solid fa-people-group iconos"></i></a></li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce nuestra misión">Misión<i
+                                class="fa-solid fa-rocket iconos"></i></a></li>
+                    <li><a href="servicios.html" class="enlaces" title="Conoce nuestra visión">Visión<i
+                                class="fa-solid fa-arrows-to-eye iconos"></i></a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <p>&copy Todos los derechos reservados</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/ff1217681a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
